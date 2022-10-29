@@ -7,7 +7,7 @@ import { LOGIN_SUCCESS, LOGIN_FAIL, REGISTER_SUCCESS, REGISTER_FAIL, AUTH_SUCCES
 // axios.defaults.baseURL = "http://localhost:5001";
 
 //uncomment and set url to your own for prod
-axios.defaults.baseURL = 'https://gentle-reaches-backend.vercel.app';
+axios.defaults.baseURL = 'https://gentle-reaches.vercel.app';
 
 //Check if user is already logged in
 export const isAuth = () => (dispatch) => {
