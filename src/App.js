@@ -16,14 +16,16 @@ class App extends Component {
       <Provider store={store}>
         <I18nextProvider i18n={i18n}>
           <div className="px-4 mt-4">{/* <LanguageBtn /> */}</div>
-          <div className="home">
-            <h1 className="heading">Health Money</h1>
-            <div className="hero-img">
-              <img src="/img/helm.png" alt="" />
-            </div>
-            <HomePage />
-          </div>
           <Switch>
+            <Route path="/" exact>
+              <div className="home">
+                <h1 className="heading">Health Money</h1>
+                <div className="hero-img">
+                  <img src="/img/helm.png" alt="" />
+                </div>
+                <HomePage />
+              </div>
+            </Route>
             <Route exact path="/profile" component={Profile} />
           </Switch>
         </I18nextProvider>
